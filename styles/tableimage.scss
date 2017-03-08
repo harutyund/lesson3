@@ -1,0 +1,83 @@
+@import "reset.scss";
+@import "toolsTable.scss";
+
+body{
+    background-color: #66a3ff;
+}
+
+.td{
+	width: 220px;
+	height: 190px;
+	border: 1px solid blue;
+	background-color: #0066ff;
+}
+
+
+.mini1{
+	@include mini(url("../images/image1.jpg"));
+}
+.mini2{
+	@include mini(url("../images/image2.jpg"));
+}
+.mini3{
+	@include mini(url("../images/image3.jpg"));
+}
+.mini4{
+	@include mini(url("../images/image4.jpg"));
+}
+.mini5{
+	@include mini(url("../images/image5.jpg"));
+}
+.mini6{
+	@include mini(url("../images/image6.jpg"));
+}
+.mini7{
+	@include mini(url("../images/image7.jpg"));
+}
+.mini8{
+	@include mini(url("../images/image8.jpg"));
+}
+.mini9{
+	@include mini(url("../images/image9.jpg"));
+}
+
+.blackpanel{
+	@include blackpanel();
+}
+.max1{
+	@include max(url("../images/image1.jpg"));
+}
+.max2{
+	@include max(url("../images/image2.jpg"));
+}
+.max3{
+	@include max(url("../images/image3.jpg"));
+}
+.max4{
+	@include max(url("../images/image4.jpg"));
+}
+.max5{
+	@include max(url("../images/image5.jpg"));
+}
+.max6{
+	@include max(url("../images/image6.jpg"));
+}
+.max7{
+	@include max(url("../images/image7.jpg"));
+}
+.max8{
+	@include max(url("../images/image8.jpg"));
+}
+.max9{
+	@include max(url("../images/image9.jpg"));
+}
+
+.close{
+	@include close();
+}
+.show{
+	display: block;
+}
+.hidden{
+	display: none;
+}

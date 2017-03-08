@@ -1,0 +1,10 @@
+@mixin draw($color, $width:150px, $height: 150px){
+	background-color: $color;
+	width: $width;
+	height: $height;
+}
+
+@mixin margins($left, $right){
+	margin-left: $left;
+	margin-right: $right;
+}

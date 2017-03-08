@@ -1,0 +1,61 @@
+
+@mixin mini($background-image, $width: 200px, $height: 150px, $cursor: pointer, $background-position: center, $background-repeat: no-repeat, $background-size: 80%, $background-size1: 100%){
+
+	background-image: $background-image;
+    width: $width;
+	height: $height;
+	cursor: $cursor;
+
+	background-position: $background-position;
+    background-repeat: $background-repeat;
+    background-size: $background-size;
+	&:hover{
+	background-size: $background-size1;
+}
+}
+
+@mixin blackpanel($display: none, $position: fixed, $top: 0px, $left: 0px, $right: 0px, $bottom: 0px, $background-color: rgba(0,0,0,0.8)){
+	display: $display;
+    position: $position;
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+	background-color: $background-color;
+}
+
+@mixin max($background-image, $display: inline-block, $position: absolute, $top: 20%, $left: 30%, $width: 600px, $height: 400px, $background-position: center, $background-repeat: no-repeat, $background-size: 100%){
+    
+    background-image: $background-image;
+
+    display: $display;
+    position: $position; 
+    top: $top;
+    left: $left;
+	width: $width;
+	height: $height;
+
+    background-position: $background-position;
+    background-repeat: $background-repeat;
+    background-size: $background-size;
+}
+
+@mixin close($position: absolute, $top: 0%, $right: 0%, $margin-left: 100px, $width: 200px, $height: 200px, $cursor: pointer, $background-image: url("../images/heart.png"), $background-position: center, $background-repeat: no-repeat, $background-size: 100%, $width1: 250px, $height1: 250px){
+	
+	position: $position;
+	top: $top;
+	right: $right;
+	margin-left: $margin-left;
+	width: $width;
+	height: $height;
+	cursor: $cursor;
+
+	background-image: $background-image;
+    background-position: $background-position;
+    background-repeat: $background-repeat;
+    background-size: $background-size;
+    &:hover{
+	width: $width1;
+	height: $height1;
+}
+}

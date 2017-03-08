@@ -1,0 +1,68 @@
+@import "reset.scss";
+@import "toolscolor.scss";
+
+$height: 150px;
+
+body{
+	//background-color: red;
+}
+
+.container1{
+	width: 100%;
+	height: $height;
+	background-color: yellow;
+	text-align: center;
+}
+.container2{
+	width: 100%;
+	height: $height;
+	background-color: green;
+}
+.container3{
+	width: 100%;
+	height: $height;
+	background-color: blue;
+	position: relative;
+}
+.container4{
+	width: 100%;
+	height: $height;
+	background-color: yellow;
+	position: relative;
+}
+.box1{
+	display: inline-block;
+	position: relative;
+	left: 0%;
+	//background-color: red;
+	@include draw(red, 50px, 50px);
+	//width:150px;
+	//height: 150px;
+}
+.box2{
+	//background-color: black;
+	@include draw(blue, 100px, 100px);
+	//width:150px;
+	//height: 150px;
+	//margin-left: auto;
+	//margin-right: auto;
+	@include margins(auto, auto);
+}
+.box3{
+	position: absolute;
+	left: 50%;
+	//margin-left: -75px;
+	@include margins(-75px, auto);
+	//background-color: red;
+	@include draw(red);
+	//width:150px;
+	//height: 150px;
+}
+.box4{
+	position: absolute;
+	left: calc(50% - 75px);
+	//background-color: green;
+	@include draw(lime);
+	//width:150px;
+	//height: 150px;
+}

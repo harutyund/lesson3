@@ -1,0 +1,40 @@
+@import "reset.scss";
+
+
+.mini{
+	//display: inline-block;
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+}
+.blackpanel{
+	display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0,0,0,0.8);
+}
+.max{
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	width: 600px;
+}
+.close{
+	background-color: blue;
+	position: absolute;
+	top:0%;
+	right:0%;
+	margin-left: 260px;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+.show{
+	display: block;
+}
+.hidden{
+	display: none;
+}
